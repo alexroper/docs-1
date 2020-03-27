@@ -3,7 +3,7 @@ module.exports = {
   locales: {
     "/": {
       lang: "en-US",
-      title: "Craft 3 Tutorial"
+      title: "Craft CMS Tutorial"
     }
   },
   ga: "UA-39036834-9",
@@ -36,17 +36,39 @@ module.exports = {
         {
           title: "1. Install Craft CMS",
           collapsable: true,
-          children: ["install/"]
+          children: [
+            "install/files",
+            "install/database",
+            "install/server",
+            "install/setup"
+          ]
         },
         {
           title: "2. Build Your Content",
           collapsable: true,
-          children: ["configure/"]
+          children: [
+            "configure/",
+            "configure/control-panel",
+            "configure/modeling",
+            "configure/section",
+            "configure/globals",
+            "configure/single",
+            "configure/editing"
+          ]
         },
         {
           title: "3. Build Your Front End",
           collapsable: true,
-          children: ["build/"]
+          children: [
+            "build/",
+            "build/routing",
+            "build/twig",
+            "build/templates",
+            "build/preview",
+            "build/graphql",
+            "build/element-api",
+            "build/custom-controllers"
+          ]
         },
         {
           title: "4. Make Your Site Live",
