@@ -74,13 +74,22 @@ module.exports = {
           title: "4. Make Your Site Live",
           collapsable: true,
           children: ["deploy/"]
+        },
+        {
+          title: "Next Steps",
+          collapsable: true,
+          children: ["more/"]
         }
       ]
     },
     nav: [
       {
-        text: "Craft CMS",
+        text: "Resources",
         items: [
+          {
+            text: "Sample Code",
+            link: "https://github.com/craftcms/tutorial-project"
+          },
           {
             text: "Craft 3 Documentation",
             link: "https://docs.craftcms.com/v3/"
