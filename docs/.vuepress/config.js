@@ -8,13 +8,11 @@ module.exports = {
   },
   ga: "UA-39036834-9",
   base: "/tutorial/v3/",
-  editLinkText: "Edit this page on GitHub",
   shouldPrefetch: () => false,
   themeConfig: {
     docsRepo: "craftcms/tutorial",
     docsDir: "",
     docsBranch: "v3",
-    editLinks: true,
     searchMaxSuggestions: 10,
     sidebar: {
       "/": [
