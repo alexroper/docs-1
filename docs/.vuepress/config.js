@@ -26,7 +26,7 @@ module.exports = {
           collapsable: true,
           children: [
             "environment/",
-            "environment/console",
+            "environment/terminal",
             "environment/editor",
             "environment/stack"
           ]
@@ -67,11 +67,6 @@ module.exports = {
             "build/element-api",
             "build/custom-controllers"
           ]
-        },
-        {
-          title: "4. Make Your Site Live",
-          collapsable: true,
-          children: ["deploy/"]
         },
         {
           title: "Next Steps",
