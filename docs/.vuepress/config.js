@@ -10,6 +10,7 @@ module.exports = {
   base: "/tutorial/v3/",
   shouldPrefetch: () => false,
   themeConfig: {
+    logo: "/icon.svg",
     docsRepo: "craftcms/tutorial",
     docsDir: "",
     docsBranch: "v3",
