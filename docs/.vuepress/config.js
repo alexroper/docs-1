@@ -64,8 +64,6 @@ module.exports = {
             "build/templates",
             "build/preview",
             "build/graphql",
-            "build/element-api",
-            "build/custom-controllers"
           ]
         },
         {
