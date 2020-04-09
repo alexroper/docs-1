@@ -6,14 +6,14 @@ module.exports = {
       title: "Craft CMS Tutorial"
     }
   },
-  ga: "UA-39036834-9",
+  ga: "UA-39036834-17",
   base: "/tutorial/",
   shouldPrefetch: () => false,
   themeConfig: {
     logo: "/icon.svg",
     docsRepo: "craftcms/tutorial",
-    docsDir: "",
-    docsBranch: "v3",
+    docsDir: "dir",
+    docsBranch: "master",
     searchMaxSuggestions: 10,
     sidebar: {
       "/": [
@@ -87,7 +87,7 @@ module.exports = {
             link: "https://github.com/craftcms/tutorial"
           },
           {
-            text: "Craft 3 Documentation",
+            text: "Craft Documentation",
             link: "https://docs.craftcms.com/v3/"
           },
           {
