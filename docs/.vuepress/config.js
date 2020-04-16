@@ -1,18 +1,32 @@
 module.exports = {
   theme: "craftdocs",
+  plugins: [
+    ["@vuepress/google-analytics", { ga: "UA-39036834-17" }],
+    [
+      "vuepress-plugin-medium-zoom",
+      {
+        selector: ".theme-default-content img",
+        delay: 1000,
+        options: {
+          margin: 24,
+          background: "#f1f5fd",
+          scrollOffset: 0
+        }
+      }
+    ]
+  ],
   locales: {
     "/": {
       lang: "en-US",
       title: "Craft CMS Tutorial"
     }
   },
-  ga: "UA-39036834-17",
   base: "/tutorial/",
   shouldPrefetch: () => false,
   themeConfig: {
     logo: "/icon.svg",
     docsRepo: "craftcms/tutorial",
-    docsDir: "dir",
+    docsDir: "docs",
     docsBranch: "master",
     searchMaxSuggestions: 10,
     sidebar: {
@@ -114,7 +128,7 @@ module.exports = {
         return content.replace(/[_`]/g, "");
       }
     },
-    config(md) {
+    extendMarkdown(md) {
       md.use(replaceApiLinks)
         .use(require("vuepress-theme-craftdocs/markup"))
         .use(require("markdown-it-deflist"))
