@@ -7,7 +7,7 @@
     "vuepress": "^1.4.1",
     "vuepress-plugin-medium-zoom": "^1.1.8",
     "vuepress-plugin-sitemap": "^1.1.1",
-    "vuepress-theme-craftdocs": "./../vuepress-theme-craftdocs/"
+    "vuepress-theme-craftdocs": "^2.0.0"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
