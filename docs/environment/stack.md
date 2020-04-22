@@ -56,7 +56,7 @@ Before adding a development server, we first have to create a Nitro machine. Thi
 To create a machine, run this terminal command:
 
 ```sh
-nitro machine create
+nitro init
 ```
 
 Follow the prompts to create your machine.
