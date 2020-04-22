@@ -85,7 +85,7 @@ The home folder path alias `~/` can only be used on macOS and Linux. With Window
 cd ~/projects/tutorial
 ```
 
-2. Run `nitro add tutorial` and follow the prompts.
+2. Run `nitro add` and follow the prompts.
 
 - hostname: `tutorial.test`
 - webroot: `web`
@@ -96,17 +96,17 @@ The whole process will look something like this when you’re finished:
 
 ```sh
 nitro add
-→ What should the hostname be? example.test
+→ What should the hostname be? tutorial.test
 → Where is the webroot? web
-✔ example.test has been added to nitro.yaml.
+✔ tutorial.test has been added to nitro.yaml.
 → apply nitro.yaml changes now? yes
-✔ Applied the changes and added example.test to nitro-dev
-Adding nitro-dev to your hosts file
+✔ Applied the changes and added tutorial.test to nitro-dev
+Adding tutorial.test to your hosts file
 Password:
-✔ example.test added successfully!
+✔ tutorial.test added successfully!
 ```
 
-You should now be able to visit `https://tutorial.test` in your browser and get a “No input file specified.” error message. That’s exactly what we want, because next we’ll add the files that actually make the site go!
+You should now be able to visit `http://tutorial.test` in your browser and get a “No input file specified.” error message. That’s exactly what we want, because next we’ll add the files that actually make the site go!
 
 TODO: screenshot “No input file specified.”
 
