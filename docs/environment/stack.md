@@ -39,6 +39,10 @@ Nitro uses [Multipass](https://multipass.run/) to efficiently set up and manage 
 
 Visit <https://multipass.run/#install>, choose the installer for your operating system, and run it.
 
+::: tip
+You can alternatively install Multipass with [brew](https://brew.sh/), [snap](https://snapcraft.io/), or [chocolatey](https://chocolatey.org/). If you aren’t already using any of those, it’ll be easiest to stick with the Multipass installer.
+:::
+
 ### Step 2: Install Nitro
 
 Run the following terminal command:
@@ -47,7 +51,7 @@ Run the following terminal command:
 curl -sLS http://installer.getnitro.sh | bash
 ```
 
-TODO: show what happens
+![](../../images/tutorial-nitro-install.gif)
 
 ### Step 3: Create a Nitro Machine
 
@@ -61,7 +65,9 @@ nitro init
 
 Follow the prompts to create your machine.
 
-TODO: show what it looks like
+![](../../images/tutorial-nitro-init.gif)
+
+This will be the longest part of the install process, as the machine is built and initialized.
 
 Once complete, you will have a Multipass machine called nitro-dev, and a new configuration file for the machine stored at ~/.nitro/nitro-dev.yaml. (You can edit that file later if you want to change settings or add new sites.)
 
@@ -106,9 +112,11 @@ Password:
 ✔ tutorial.test added successfully!
 ```
 
-You should now be able to visit `http://tutorial.test` in your browser and get a “No input file specified.” error message. That’s exactly what we want, because next we’ll add the files that actually make the site go!
+You should now be able to visit `http://tutorial.test` in your browser and get a 404 error message. That’s exactly what we want, because next we’ll add the files that actually make the site go!
 
-TODO: screenshot “No input file specified.”
+<BrowserShot url="https://tutorial.test" :link="false">
+<img src="../../images/tutorial-nitro-404.png" alt="Screenshot of 404 error from the web server" />
+</BrowserShot>
 
 ## Other local environments
 
